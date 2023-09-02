@@ -49,9 +49,16 @@ div.innerHTML = `
 <img class="w-full h-72 rounded-lg" src="${category.thumbnail}" alt="Shoes" /></div>
     
     <div class=" flex items-center justify-around gap-1 mt-4">
-        <div>
-            <img class ="w-16 h-16 rounded-[40px]" src="${category.authors[0].profile_picture}" alt="">
+    <div>
+    <div>
+            <img class ="w-16 h-16 rounded-[40px] relative" src="${category.authors[0].profile_picture}" alt="">
         </div>
+        <div class= "absolute -mt-32 ml-44">
+        <p class= "text-white bg-black px-2 rounded-md">${category.others.posted_date}</p>
+        </div>
+        
+    </div>
+        
         <div>
             <h2 class="card-title">${category.title}</h2>
             <div class="flex gap-2">
@@ -74,6 +81,10 @@ cardfield.appendChild(div);
     })
 
 
+}
+
+function blogbtn(){
+    window.location.href = 'questionans.html';
 }
 
 categorieshandler()
