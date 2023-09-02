@@ -42,6 +42,7 @@ cardfield.innerHTML = '';
 
         console.log(category)
 const div = document.createElement('div')
+
 div.innerHTML = `
 <div>
 <div class="  ">
